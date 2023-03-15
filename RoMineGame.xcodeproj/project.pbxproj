@@ -13,6 +13,14 @@
 		FD0034DC29BF3641000F3850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0034DB29BF3641000F3850 /* ContentView.swift */; };
 		FD0034DE29BF3645000F3850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0034DD29BF3645000F3850 /* Assets.xcassets */; };
 		FD0034E229BF3645000F3850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0034E129BF3645000F3850 /* Preview Assets.xcassets */; };
+		FD0034EC29BF3696000F3850 /* GirdItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0034EB29BF3696000F3850 /* GirdItemModel.swift */; };
+		FD0034EE29BF37FE000F3850 /* GirdItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0034ED29BF37FE000F3850 /* GirdItemView.swift */; };
+		FD0034F029C01C7C000F3850 /* GirdsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0034EF29C01C7C000F3850 /* GirdsViewModel.swift */; };
+		FD0034F229C01F8F000F3850 /* GirdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0034F129C01F8F000F3850 /* GirdsView.swift */; };
+		FDB2BD9329C0881200F2197B /* MacGridsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2BD9229C0881200F2197B /* MacGridsView.swift */; };
+		FDB2BD9529C1B16200F2197B /* IphoneGridsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2BD9429C1B16100F2197B /* IphoneGridsView.swift */; };
+		FDB2BD9729C1B37300F2197B /* GirdsSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2BD9629C1B37300F2197B /* GirdsSettingView.swift */; };
+		FDB2BD9929C1B5E800F2197B /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB2BD9829C1B5E800F2197B /* StatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		FD0034DD29BF3645000F3850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0034DF29BF3645000F3850 /* RoMineGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoMineGame.entitlements; sourceTree = "<group>"; };
 		FD0034E129BF3645000F3850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD0034EB29BF3696000F3850 /* GirdItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdItemModel.swift; sourceTree = "<group>"; };
+		FD0034ED29BF37FE000F3850 /* GirdItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdItemView.swift; sourceTree = "<group>"; };
+		FD0034EF29C01C7C000F3850 /* GirdsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdsViewModel.swift; sourceTree = "<group>"; };
+		FD0034F129C01F8F000F3850 /* GirdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdsView.swift; sourceTree = "<group>"; };
+		FDB2BD9229C0881200F2197B /* MacGridsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacGridsView.swift; sourceTree = "<group>"; };
+		FDB2BD9429C1B16100F2197B /* IphoneGridsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneGridsView.swift; sourceTree = "<group>"; };
+		FDB2BD9629C1B37300F2197B /* GirdsSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirdsSettingView.swift; sourceTree = "<group>"; };
+		FDB2BD9829C1B5E800F2197B /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,9 @@
 		FD0034D329BF3641000F3850 /* RoMineGame */ = {
 			isa = PBXGroup;
 			children = (
+				FD0034EA29BF3670000F3850 /* ViewModel */,
+				FD0034E929BF3668000F3850 /* Model */,
+				FD0034E829BF3653000F3850 /* View */,
 				FD0034D429BF3641000F3850 /* RoMineGameApp.swift */,
 				FD0034D629BF3641000F3850 /* Persistence.swift */,
 				FD0034DB29BF3641000F3850 /* ContentView.swift */,
@@ -73,6 +92,35 @@
 				FD0034E129BF3645000F3850 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD0034E829BF3653000F3850 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD0034ED29BF37FE000F3850 /* GirdItemView.swift */,
+				FD0034F129C01F8F000F3850 /* GirdsView.swift */,
+				FDB2BD9229C0881200F2197B /* MacGridsView.swift */,
+				FDB2BD9429C1B16100F2197B /* IphoneGridsView.swift */,
+				FDB2BD9629C1B37300F2197B /* GirdsSettingView.swift */,
+				FDB2BD9829C1B5E800F2197B /* StatusView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD0034E929BF3668000F3850 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD0034EB29BF3696000F3850 /* GirdItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD0034EA29BF3670000F3850 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD0034EF29C01C7C000F3850 /* GirdsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +193,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB2BD9729C1B37300F2197B /* GirdsSettingView.swift in Sources */,
 				FD0034D529BF3641000F3850 /* RoMineGameApp.swift in Sources */,
+				FDB2BD9929C1B5E800F2197B /* StatusView.swift in Sources */,
 				FD0034D729BF3641000F3850 /* Persistence.swift in Sources */,
+				FDB2BD9329C0881200F2197B /* MacGridsView.swift in Sources */,
+				FD0034EC29BF3696000F3850 /* GirdItemModel.swift in Sources */,
+				FD0034EE29BF37FE000F3850 /* GirdItemView.swift in Sources */,
 				FD0034DC29BF3641000F3850 /* ContentView.swift in Sources */,
 				FD0034DA29BF3641000F3850 /* RoMineGame.xcdatamodeld in Sources */,
+				FD0034F229C01F8F000F3850 /* GirdsView.swift in Sources */,
+				FD0034F029C01C7C000F3850 /* GirdsViewModel.swift in Sources */,
+				FDB2BD9529C1B16200F2197B /* IphoneGridsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

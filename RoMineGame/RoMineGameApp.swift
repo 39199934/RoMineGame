@@ -13,8 +13,13 @@ struct RoMineGameApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(macOS)
+            MacGridsView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            #else
+            IphoneGridsView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            #endif
         }
     }
 }
